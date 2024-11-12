@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Care Hospital</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="css/styles_contact.css">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="doctors.html">Doctors</a></li>
+                <li><a href="opd_schedule.html">OPD Schedule</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contact Form Section -->
+        <section id="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="submit_contact.php" method="POST">
+                <div class="input-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+                <div class="input-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+                <div class="input-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section id="contact-info">
+            <div class="info-box">
+                <h2>Contact Information</h2>
+                <div class="info">
+                    <div>
+                        <img src="images/phone-icon.png" alt="Phone Icon">
+                        <p><strong>Phone:</strong> +1 (555) 123-4567</p>
+                    </div>
+                    <div>
+                        <img src="images/email-icon.png" alt="Email Icon">
+                        <p><strong>Email:</strong> info@carehospital.com</p>
+                    </div>
+                    <div>
+                        <img src="images/address-icon.png" alt="Address Icon">
+                        <p><strong>Address:</strong> 123 Health Street, Care City, CA 12345</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Google Maps Section -->
+        <section id="map">
+            <h2>Our Location</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093717!2d144.9537363154116!3d-37.816279442076925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d43e5fb79df%3A0x4b2ef0f2f0f6e6b!2s123%20Health%20Street%2C%20Care%20City%2C%20CA%2012345!5e0!3m2!1sen!2sus!4v1600213428761!5m2!1sen!2sus"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+            </iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Care Hospital | Follow us: 
+            <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+        </p>
+    </footer>
+</body>
+</html>
